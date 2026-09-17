@@ -10,15 +10,15 @@ class TTTPvC
         //if((int)(Math.random() * 2) == 0)
         if(true)
         {
-            playerX = new User();
-            playerO = new Computer(3, -1);
+            playerX = new User("Player X");
+            playerO = new Computer(3, -1, "Computer");
             bot = (Computer)playerO;
             player = 1;
         }
         else
         {
-            playerO = new User();
-            playerX = new Computer(3, 1);
+            playerO = new User("Player O");
+            playerX = new Computer(3, 1, "Computer");
             bot = (Computer)playerX;
             player = 0;
         }
@@ -51,7 +51,7 @@ class TTTPvC
             ttt.showBoard(false);
             if (ttt.checkWin()) {
                 ttt.showBoard(true);
-                ttt.displayWin();
+                ttt.displayWin(playerX, playerO);
             }
             turn++;
         }

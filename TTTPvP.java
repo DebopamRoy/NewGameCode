@@ -4,8 +4,8 @@ class TTTPvP
     {
         TicTacToe ttt = new TicTacToe();
         //ttt.gameTick();
-        Player playerX = new User();
-        Player playerO = new User();
+        Player playerX = new User("Player X");
+        Player playerO = new User("Player O");
         int turn = 1;
         ttt.showBoard(false);
         for(int i = 1 ; i <= 9 ; i++)
@@ -30,7 +30,7 @@ class TTTPvP
             if (ttt.checkWin()) {
                 System.out.println();
                 ttt.showBoard(true);
-                ttt.displayWin();
+                ttt.displayWin(playerX, playerO);
             }
             turn++;
         }

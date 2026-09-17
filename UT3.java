@@ -22,7 +22,7 @@ public class UT3 {
     }
     
     public boolean checkWin() {
-        int i;
+        int i; // A
         for (i = 0; i < 3; winCells[i] = r * 3 + i, i++)
             if (board[r][i] != player)
                 break;
