@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=TicTacToe
+comment1.params=
+comment1.target=TicTacToe()
+comment2.params=r\ c\ turn
+comment2.target=void\ tickMove(int,\ int,\ int)
+comment3.params=
+comment3.target=boolean\ checkWin()
+comment4.params=isWon
+comment4.target=void\ showBoard(boolean)
+comment5.params=
+comment5.target=void\ displayWin()
+comment6.params=
+comment6.target=char[][]\ getBoard()
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8
